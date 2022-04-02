@@ -145,3 +145,9 @@ Para que esse teste passe, DELETE `/todos/:id` você deve permitir que um *todo*
 - **Should not be able to delete a non existing todo**
 
 Para que esse teste passe, você não deve permitir excluir um *todo* que não exista e retornar uma resposta contendo um status `404` e um json no seguinte formato:
+
+```jsx
+{
+	error: 'Mensagem do erro'
+}
+```
